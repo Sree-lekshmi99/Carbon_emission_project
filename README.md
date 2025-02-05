@@ -1,121 +1,77 @@
-## **SAVE OUR EARTH**
+# Carbon Footprint Tracker
 
+A cloud-native serverless application that helps users track and reduce their carbon footprint from food consumption.
 
-# Project II : CMPE 281- Cloud Technologies
-# Carbon Emission Calculator
-## Team : Modular Monolith
-## Team Members :
-```
-1) Anastasia Zimina [LinkedIn](https://www.linkedin.com/in/anastaszi/)
-2) Manjiri Kadam [LinkedIn](https://www.linkedin.com/in/manjiri-kadam-133085113/)
-3) Pooja Prasannan
-```
-## Checkout our website: [Carbon Emission Calculator](https://co2emissioncalculator.savenaturetoday.com/)
-### Demo Video: [Link](https://www.youtube.com/watch?v=CYsvZ8MgthU&feature=youtu.be)
-# Introduction:
-Climate change is a big, alarming issue now-a-days. Due to progression in technologies and capitalism our food consumption and lifestyle has changed drastically over the past few decades. Previously man used to hunt for filling the appetite, now we eat fancy, processed and comfort food which is producing hazardous greenhouse gases which is depleting the Ozone layer and is inducing global warming. Every organic product(Containing HydroCarbons) has its own Carbon Footprint. Carbon footprint is the total amount of CO2 and other greenhouse gases emitted over the life cycle of the product or service, expressed as kilograms of Carbon dioxide equivalent. Due to increase in livestock production, advancement in farming and industrialization food production is increasing, so is the carbon footprint for food production. It is very important to give special attention to the food we consume in order to maintain environmental balance. In our project we are implementing the solution to help people make the better choice in food consumption which is environmentally efficient and produces less Carbon emission.
+## Introduction
 
-# Project Idea:
-In our project, we have developed a bot to find carbon emission of products. The user has to input the type of item and the quantity and the bot will evaluate the total answer i.e the total amount of carbon emission of those products in kg CO2 equivalent. The user can input a budget for his/her emission and can compare whether he/she exceeds the budget or not. For developing the bot we have used Amazon Lex bot. The user’s records with the items purchased, its quantity, emission, budget are stored in Dynamodb. On each record addition in Dynamodb, lambda is triggered to add the dynamodb streams to elasticsearch cluster. We are then analysing the data about total emissions using Kibana.
+Climate change is a major concern today, and food production plays a significant role in greenhouse gas emissions. As technology and industrialization advance, our food habits have shifted toward processed and packaged items, increasing carbon emissions. 
 
-With this project we aims to make us aware of the amount of carbon emission (in terms of CO2 equivalent) we do on our part in terms of our daily purchases and food choices and suggest them with choices that could make a change. 
+Every organic product containing hydrocarbons has a **carbon footprint**—the total amount of CO2 and other greenhouse gases emitted throughout its life cycle. This project helps users make informed food choices by calculating their carbon emissions and suggesting sustainable alternatives.
 
-This is a cloud native serverless application using AWS. Frontend of this project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Backend is using nodejs.
+## Project Overview
 
-### **Services Used**
-* Cognito							:		Authentication & Authorization
-* Lambda  						:		Serverless application
-* AWS Amplify  					:		CI/CD deployment &  hosting                 
-* Amazon Lex						:		Chatbot for interaction
-* DynamoDB						:		Scalable NoSQL Database
-* AWS AppSync 					:		GraphQL API based backend
-* ElasticSearch Service			:		Indexing and analytics 
-* Kibana							:		Visual representation
-* Cloudwatch						:		App health monitoring
-* SNS							:		Notification for alarm
-#### **Other services**
-  * GoDaddy : Domain name registration
-  * Twitter : Timeline embedding
-			
+This project features a chatbot that calculates the carbon emissions of various food products. Users input the type of item and quantity, and the bot evaluates the total carbon footprint in **kg CO2 equivalent**. Users can also set an emission budget and track whether they exceed their limit.
 
-### **Architecture Diagram**
+### **Technology Stack**
+- **Frontend:** React (bootstrapped with Create React App)
+- **Backend:** Node.js
+- **Cloud Provider:** AWS
 
-<img src="Architecture_diagram.png">
+### **AWS Services Used**
+- **Cognito** – User authentication and authorization
+- **AWS Lambda** – Serverless function execution
+- **AWS Amplify** – CI/CD deployment and hosting
+- **Amazon Lex** – AI-powered chatbot
+- **DynamoDB** – NoSQL database for storing user data
+- **AWS AppSync** – GraphQL API backend
+- **Elasticsearch Service** – Data indexing and analytics
+- **Kibana** – Data visualization and reports
+- **CloudWatch** – Application health monitoring
+- **SNS** – Alerts and notifications
 
-### **Features**
+### **Additional Services**
+- **GoDaddy** – Domain name registration
+- **Twitter API** – Embedded timeline integration
 
-* A Cloud native application.
-* CI/CD enabled with Github.
-* Reduced latency using Amplify(leverages CloudFront).
-* API driven backend using GraphQL API .
-* Serverless app leveraging Lambda.
-* CloudWatch and SNS for app health monitoring.
-* CI/CD enabled with Github.
-* Machine learning through Lex.
-* Analytics through ElasticSearch.
-* Visual insights through Kibana.
-* Twitter tweets integrated to website.
+## Architecture Diagram
 
+![Architecture Diagram](Architecture_diagram.png)
 
-### **Utility for users**
+## Features
 
-* Know 
- carbon emission
-value for their food items and purchases.
-* Set a carbon budget for themselves to be achieved over time.
-* Visually monitor
-their  emission 
-over time through graphs.
-* Know about 
-alternative sustainable
- options and choices.
-* Share their life 
-style changes with others in the app to motivate others.
+- Cloud-native, serverless application
+- CI/CD enabled with GitHub
+- Low latency with AWS Amplify and CloudFront
+- API-driven backend using GraphQL
+- AI-powered chatbot using Amazon Lex
+- Real-time data analytics with Elasticsearch
+- Data visualization with Kibana
+- Automated monitoring with CloudWatch and SNS
+- Twitter integration for updates and discussions
 
-### **Utility for organization**
-* Provide
- suggestions of 
-sustainable 
-products  according to user's lifestyle.
-* Assist government/researchers
-with data for targetted
-policy.
-* Can unserstand which product to be 
-targeted to reduce
-emission.
-* Can support local sustainable producers by suggesting to users.
+## How It Helps Users
 
+- **Track Carbon Emissions** – Find out how much CO2 is emitted from food choices
+- **Set and Monitor Goals** – Define a carbon budget and track progress
+- **Discover Sustainable Alternatives** – Get recommendations for lower-emission options
+- **Visualize Impact Over Time** – Use graphs and reports to analyze emissions
+- **Encourage Sustainable Habits** – Share lifestyle changes with others
 
-Thank You.
+## How It Helps Organizations
 
+- **Encourage Sustainable Consumption** – Help users choose lower-emission products
+- **Provide Data for Research** – Assist policymakers with insights for targeted policies
+- **Promote Eco-Friendly Products** – Support sustainable producers by recommending their products
 
+## Getting Started
 
+### **Prerequisites**
+- **Node.js** (Latest LTS version)
+- **AWS Account** (for using AWS services)
+- **GitHub Account** (for CI/CD setup)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### **Installation**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/carbon-footprint-tracker.git
+   cd carbon-footprint-tracker
