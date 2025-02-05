@@ -1,0 +1,38 @@
+:root {
+  --brown: rgb(167,113,42);
+  --dark-green: #21593f;
+  --deep-green: #38a14a;
+  --greeny: #88b744ff;
+  --greeny-yellow: #d4ce36ff;
+  --yellow: #fef33f;
+  --yellow-orange: #ffe935;
+  --orange: #fa9d33;
+  --red: #f1552d;
+  --deep-red: #d90a2d;
+
+  --amplify-primary-color: #88b744ff;
+  --amplify-font-family: inherit !important;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+amplify-sing-out {
+  background: black;
+}
+
+.refresh {
+  font-size: 0.75rem;
+}

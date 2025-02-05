@@ -1,0 +1,13 @@
+.name-logo {
+  width: 10rem;
+}
+
+.btn-custom {
+  background-color: var(--greeny-yellow);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-custom:hover {
+  background-color: var(--greeny);
+  color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,59 @@
+.background0 {
+    background-image: url('https://images4.alphacoders.com/955/thumb-1920-955566.jpg');
+}
+
+.class2 {
+    background-image: url('https://image.shutterstock.com/image-photo/europe-night-viewed-space-city-260nw-1072726052.jpg');
+}
+
+
+.class1 {
+    background-image: url('https://raw.githubusercontent.com/poojakota17/Carbonemission_Calculator/master/earth1.jpg');
+}
+
+.caption {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/*.class1:hover,
+.class2:hover {
+    filter: blur(8px);
+}*/
+
+.myCard:hover{
+    filter: drop-shadow(15px 15px 4px var(--greeny))
+}
+.myCard {
+    transition: filter 1.5s;
+}
+
+.background0,
+.class2,
+.class1 {
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: filter 1s;
+}
+
+.class1{
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.tweet {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.img{
+    border-radius: 50%;
+}
